@@ -1,10 +1,13 @@
 package models
 
-import "gorm.io/gorm"
+import (
+	"gorm.io/gorm"
+)
 
 // Company struct defines company table's schema
 type Company struct {
 	gorm.Model
+	ID 	  string `gorm:"primaryKey"`
 	Name      string
 	Email     string
 	Employees int
@@ -14,6 +17,7 @@ type Company struct {
 // Project struct defines project table's schema
 type Project struct {
 	gorm.Model
+	ID 	  string `gorm:"primaryKey"`
 	Name      string
 	Domain    string
 	Employees int
