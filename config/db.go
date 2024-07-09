@@ -20,7 +20,7 @@ func Connect() {
 
 	// &gorm.Config{}: This is the configuration object for GORM. By passing an empty gorm.Config{}, you're using the default configuration. However, this object can be customized to change GORM's behavior, such as enabling logging, specifying naming strategies, and more.
 
-	// use your database credentials
+	// Use your database credentials
 	dsn := "host=localhost user=postgres password=password dbname=go-projects-companies-api port=5432 sslmode=disable"
 
 
